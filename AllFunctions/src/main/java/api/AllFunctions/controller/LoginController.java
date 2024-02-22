@@ -21,8 +21,8 @@ public class LoginController {
      @Autowired
     private PasswordEncoder encoder;
 
-    @Autowired
-    private SecurityConfig securityConfig;
+    // @Autowired
+    // private SecurityConfig securityConfig;
 
     @Autowired
     private UsuarioRepository repository;
