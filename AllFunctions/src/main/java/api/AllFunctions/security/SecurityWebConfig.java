@@ -38,8 +38,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
             .addFilterAfter(new FilterToken(), UsernamePasswordAuthenticationFilter.class)
             .authorizeRequests()
             .antMatchers(SWAGGER_WHITELIST).permitAll()
-                .antMatchers("/api/usuarios").permitAll() // Permitir acesso ao endpoint de criação de usuário
-                .anyRequest().authenticated()
+                .antMatchers().permitAll() // Permitir acesso ao endpoint de criação de usuário
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);;

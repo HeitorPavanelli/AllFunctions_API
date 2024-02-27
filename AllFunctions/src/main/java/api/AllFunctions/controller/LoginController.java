@@ -18,7 +18,7 @@ import api.AllFunctions.security.SecurityConfig;
 
 @RestController
 public class LoginController {
-     @Autowired
+    @Autowired
     private PasswordEncoder encoder;
 
     // @Autowired

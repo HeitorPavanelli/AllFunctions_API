@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    
+    //caminho para abrir o swagger: http://localhost:8080/swagger-ui.html
     private Contact contato(){
         return new Contact(
             "Heitor Pavanelli",//meu nome
